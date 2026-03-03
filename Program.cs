@@ -9,9 +9,9 @@ namespace NoDozeTest
         static void Main(string[] args)
         {
             Console.WriteLine("Preventing sleep...");
-            using (NoDoze.PreventSleep())
+            using (NoDoze.PreventSleep(preventDisplaySleep: true))
             {
-                Console.WriteLine("Sleeping for 5 seconds (system sleep prevented)...");
+                Console.WriteLine("Sleeping for 60 seconds (system sleep prevented)...");
                 Thread.Sleep(60000);
                 Console.WriteLine("Done.");
             }
