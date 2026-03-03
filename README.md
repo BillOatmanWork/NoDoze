@@ -1,6 +1,6 @@
 # NoDoze
 
-A lightweight Windows utility class that prevents the system from entering sleep mode during long-running operations.
+A lightweight C# Windows utility class that prevents the system from entering sleep mode during long-running operations.
 
 ## Overview
 
@@ -76,3 +76,4 @@ NoDoze calls the Windows [`SetThreadExecutionState`](https://learn.microsoft.com
 | `ES_DISPLAY_REQUIRED` | Prevent display sleep (optional) |
 
 The previous execution state is saved when `PreventSleep` is called and restored when `AllowSleep` is called.
+
